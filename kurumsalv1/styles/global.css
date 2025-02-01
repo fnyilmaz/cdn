@@ -1,0 +1,108 @@
+html {
+    font-family: "Rubik", sans-serif;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* word-break: break-all; */
+    /* transition: 0.2s ease; */
+    color: white;
+    text-align: center;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: clamp(3rem, 10vw, 7rem);
+    text-align: start;
+}
+
+h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 600;
+}
+
+
+p,
+li,
+a {
+    font-size: calc(1.5rem + 0.25vw);
+}
+
+.shadow1 {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+hr {
+    width: calc(1rem + 2vw);
+    border: 1px solid #ecba16;
+}
+
+
+
+
+.bilgi-span {
+    display: flex;
+    align-items: center;
+    gap: calc(0.5rem + 0.25vw);
+    font-size: clamp(1.5rem, 1.75vw, 1.75rem);
+    color: #ecba16;
+    font-weight: 800;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+.bilgi-span::before {
+    content: '';
+    display: block;
+    width: calc(1rem + 2vw);
+    height: 2px;
+    background-color: #ecba16;
+}
+
+
+/* Ãœst Arkaplan */
+.arkaplan {
+    /* Blur efekti */
+    position: relative;
+    background-size: cover;
+    /* GÃ¶rÃ¼ntÃ¼yÃ¼ tam olarak kapsayacak ÅŸekilde ayarlar */
+    background-position: center;
+    /* GÃ¶rÃ¼ntÃ¼yÃ¼ merkezler */
+    background-repeat: no-repeat !important;
+}
+
+.arkaplan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #11428b33;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    z-index: 1;
+}
+
+.arkaplan>* {
+    position: relative;
+    z-index: 2;
+}

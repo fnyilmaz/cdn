@@ -1,0 +1,110 @@
+/* google-maps */
+.google-maps {
+    padding: calc(2rem + 3vw) calc(0.5rem + 1vw) calc(0.5rem + 1vw) calc(0.5rem + 1vw);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #001c41;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.google-maps .google-maps {
+    width: 100%;
+    max-width: 1750px;
+    max-height: 1000px;
+    height: calc(30rem + 30vw);
+    border: none;
+    box-shadow: var(--shadow-1);
+}
+
+footer {
+    padding: clamp(3rem, 3vw, 6rem) clamp(1rem, 2vw, 15rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #001c41;
+    width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+    gap: calc(2rem + 2vw);
+}
+
+footer * {
+    color: white;
+}
+
+footer h2 {
+    font-size: clamp(2.5rem, 3vw, 4rem);
+    font-weight: 800;
+}
+
+footer h3 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 800;
+    color: #00a696;
+}
+
+footer a {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+
+}
+
+footer .bilgi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+}
+
+footer .bilgi h2 span {
+    color: #00a696;
+}
+
+footer .link-bolumu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: fit-content;
+    margin-right: auto;
+}
+
+footer .link-bolumu>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 1px solid #3d454c;
+    padding-top: 1rem;
+}
+
+footer .link-bolumu .sosyal .liste {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media(max-width:725px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    footer .link-bolumu {
+        justify-content: center;
+    }
+}
+
+
+footer .copyright {
+    font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+}

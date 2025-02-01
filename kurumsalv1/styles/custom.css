@@ -1,0 +1,69 @@
+header>.ulasin {
+    background-color: #ECBA16;
+
+}
+
+.dropdown>ul {
+    background-color: #ECBA16;
+    color: #212121;
+}
+
+.dropdown>ul>li a {
+    color: #212121;
+}
+
+
+#contact-buttons a {
+    background-color: #212121;
+}
+
+.hizmetler {
+    background-color: #ECBA16;
+}
+
+.hizmet-liste .hizmet {
+    background-color: #212121;
+}
+
+.hizmetler .bilgi-span {
+    color: #212121;
+}
+
+.hizmetler .bilgi-span::before {
+    background-color: #212121;
+}
+
+
+
+.istatistik {
+    background-color: #212121;
+}
+
+
+
+.google-maps {
+    background-color: #212121;
+}
+
+
+
+footer {
+    background-color: #212121;
+}
+
+
+
+.arkaplan {
+    min-height: 80vh;
+}
+
+
+#fullMenuButton {
+    background-color: #ECBA16;
+}
+
+
+
+.dropdown i {
+    color: #ECBA16;
+}
